@@ -138,6 +138,47 @@
 
 
     </footer>
+    <div id="modalReserva" class="modal">
+        <div class="content">
+            <img src="./assets/img/logo.jpeg" alt="Logo">
+            <span class="close">&times;</span>
+            <h2>Faça sua reserva</h2>
+            
+            <form id="formReserva">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+                <label for="data">Data</label>
+                <input type="date" id="data" placeholder="dd/mm/aaaa" required>
+                <label for="hora">Horário</label>
+                <select id="hora" required>
+                    <option value="" disabled selected>Escolha um horário</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+                <label for="pessoas">Quantidade de pessoas</label>
+                <select id="pessoas" required>
+                    <option value="" disabled selected>Quantidade de pessoas</option>
+                    <option value="1">1 pessoa</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
+                    <option value="5">5 pessoas</option>
+                    <option value="6">6+ pessoas</option>
+                    <option value="10">10+ pessoas</option>
+                    <option value="20">20+ pessoas</option>
+                </select>
+                <button class="btn">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
 
 </body>
 

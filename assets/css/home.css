@@ -482,6 +482,34 @@ footer {
     width: auto;
 }
 
+.content {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 450px; /* Evita que o modal fique largo demais em telas grandes */
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content img {
+    max-width: 100px; /* Ajusta o tamanho da sua logo no modal */
+    margin-bottom: 10px;
+}
+
+#formReserva {
+    display: flex;
+    flex-direction: column; /* Coloca um campo abaixo do outro */
+    text-align: left; /* Alinha os labels à esquerda */
+}
+
+#formReserva input, #formReserva select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 
 
 
