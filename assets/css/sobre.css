@@ -21,6 +21,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .sobre {
 
     max-width: 90rem;

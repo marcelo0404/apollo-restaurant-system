@@ -22,10 +22,10 @@
             </a>
 
             <nav class="nav">
-                <a href="#">Home</a>
-                <a href="#artigo">Blog</a>
-                <a href="#sobre">Sobre Nós</a>
-                <button>Fazer reserva</button>
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="sobre.html">Sobre Nós</a>
+                <button class="btn btn-abrir">Fazer reserva</button>
             </nav>
         </section>
     </header>
@@ -37,13 +37,13 @@
             <img src="./assets/img/massa.png" alt="massa">
             <p>10 de Março, 2026</p>
             <h2>Os secredos da massa italiana</h2>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Unde repudiandae, voluptate 
-                similique, nam cumque, ullam molestias quas 
-                laborum quam officia aut repellat totam quos 
-                consequatur corporis vitae voluptatem? Consequatur, 
+            <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Unde repudiandae, voluptate
+                similique, nam cumque, ullam molestias quas
+                laborum quam officia aut repellat totam quos
+                consequatur corporis vitae voluptatem? Consequatur,
                 eum!</p>
-            <button>Ler mais</button>
+            <a href="artigo.html" class="btn">Ler mais</a>
         </div>
 
         <div class="box">
@@ -51,36 +51,36 @@
             <p>08 de Março, 2026</p>
             <h2>A importância dos Ingredientes Naturais</h2>
             <p>Lorem, ipsum dolor sit amet consectetur
-                 adipisicing elit. Commodi, possimus ea!
-                  Blanditiis ipsam ipsa at rem fuga incidunt
-                   laudantium quas, aspernatur nesciunt sapiente
-                    temporibus officia deleniti iste placeat id 
-                    saepe?</p>
-            <button>Ler mais</button>
+                adipisicing elit. Commodi, possimus ea!
+                Blanditiis ipsam ipsa at rem fuga incidunt
+                laudantium quas, aspernatur nesciunt sapiente
+                temporibus officia deleniti iste placeat id
+                saepe?</p>
+            <a href="artigo.html" class="btn">Ler mais</a>
         </div>
 
         <div class="box">
             <img src="./assets/img/doce.png" alt="doce">
             <p>01 de Março, 2026</p>
             <h2>Sobremesas: A arte do sabor</h2>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Mollitia quae recusandae 
-                ratione natus ex animi quaerat, nihil maxime 
-                atque, ut laborum commodi nemo. Quod iste nihil 
+            <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Mollitia quae recusandae
+                ratione natus ex animi quaerat, nihil maxime
+                atque, ut laborum commodi nemo. Quod iste nihil
                 esse velit, tempore sed!</p>
-            <button>Ler mais</button>
+            <a href="artigo.html" class="btn">Ler mais</a>
         </div>
 
         <div class="box">
             <img src="./assets/img/vinho.png" alt="vinho">
             <p>05 de Março, 2026</p>
             <h2>O Segredo: Vinhos e Pratos</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur 
-                adipisicing elit. Voluptatem, aperiam vitae. 
-                Sit earum vel ratione eum, delectus dignissimos 
-                suscipit. Cum animi fugiat nam in et molestiae 
+            <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Voluptatem, aperiam vitae.
+                Sit earum vel ratione eum, delectus dignissimos
+                suscipit. Cum animi fugiat nam in et molestiae
                 magnam eius id voluptatem?</p>
-            <button>Ler mais</button>
+            <a href="artigo.html" class="btn">Ler mais</a>
         </div>
 
     </section>
@@ -130,8 +130,49 @@
 
 
     </footer>
+    <div id="modalReserva" class="modal">
+        <div class="content">
+            <img src="./assets/img/logo.jpeg" alt="Logo">
+            <span class="close">&times;</span>
+            <h2>Faça sua reserva</h2>
 
+            <form id="formReserva">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+                <label for="data">Data</label>
+                <input type="date" id="data" placeholder="dd/mm/aaaa" required>
+                <label for="hora">Horário</label>
+                <select id="hora" required>
+                    <option value="" disabled selected>Escolha um horário</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+                <label for="pessoas">Quantidade de pessoas</label>
+                <select id="pessoas" required>
+                    <option value="" disabled selected>Quantidade de pessoas</option>
+                    <option value="1">1 pessoa</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
+                    <option value="5">5 pessoas</option>
+                    <option value="6">6+ pessoas</option>
+                    <option value="10">10+ pessoas</option>
+                    <option value="20">20+ pessoas</option>
+                </select>
+                <button id="formReservaclass" class="btn">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
 
+    <script src="assets/js/reserva.js"></script>
 </body>
 
 </html>

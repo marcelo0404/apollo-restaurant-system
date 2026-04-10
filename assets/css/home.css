@@ -21,6 +21,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--white);
 }
@@ -486,21 +490,21 @@ footer {
     background: white;
     padding: 20px;
     width: 90%;
-    max-width: 450px; /* Evita que o modal fique largo demais em telas grandes */
+    max-width: 450px; 
     margin: 50px auto;
     border-radius: 10px;
     text-align: center;
 }
 
 .content img {
-    max-width: 100px; /* Ajusta o tamanho da sua logo no modal */
+    max-width: 100px; 
     margin-bottom: 10px;
 }
 
 #formReserva {
     display: flex;
-    flex-direction: column; /* Coloca um campo abaixo do outro */
-    text-align: left; /* Alinha os labels à esquerda */
+    flex-direction: column; 
+    text-align: left; 
 }
 
 #formReserva input, #formReserva select {
@@ -510,7 +514,40 @@ footer {
     border-radius: 5px;
 }
 
+/* Estilo base do Modal */
+.modal {
+    display: none; /* Começa escondido */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escurecido elegante */
+    justify-content: center;
+    align-items: center;
+}
 
+/* Conteúdo do Modal */
+.content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 450px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+}
+
+/* Botão de Fechar (X) */
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
 
 
 

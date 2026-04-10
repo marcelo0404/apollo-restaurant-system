@@ -1,0 +1,105 @@
+:root {
+    --main-color: #E17100;
+    --footer: #13131a;
+    --white: #ffffff;
+    --bg: #f0f0f0;
+    --black: #0000;
+    --border: 0.25rem solid rgba(140, 136, 136, 0.24);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Inter", sans-serif;
+    text-transform: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#chef {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    border-radius: 0.625rem;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+#massa {
+    width: 54rem;
+    height: 27rem;
+    margin: 0 auto;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+#place {
+    width: 25.9375rem;
+    height: 17.3125rem;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.borda {
+    max-width: 90rem;
+    height: 168.625rem;
+    background: #f0f0f0;
+}
+
+.notice {
+    max-width: 72rem;
+    margin-top: 10rem !important;
+    margin: 0 auto;
+    height: 155.75rem;
+    border-radius: 0.625rem;
+    background: var(--B1, #FFF);
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.40);
+
+}
+
+.borda .notice .margem{
+    width: 54rem;
+    margin: 0 auto;
+}
+
+.borda .notice .margem .inicio {
+    padding-top: 0.1rem;
+
+}
+
+.borda .notice .margem h1 {
+    color: #E17100;
+    margin-top: 10rem;
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 0.125rem  solid #5c5145 ;
+}
+
+.borda .notice h2 {
+    color: #262626;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.borda .notice h3 {
+    color: #404040;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
