@@ -142,10 +142,11 @@ html {
 
 .valores .caixa {
     width: 15rem;
-    height: 20rem;
+    height: 21rem;
     gap: 1.5rem;
     justify-content: center;
     background-color: #ffffff;
+    
 
     display: flex;
     flex-direction: column;
@@ -154,9 +155,8 @@ html {
     border-radius: 0.625rem;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.35);
 
-
-
 }
+
 
 .team {
     max-width: 90rem;
