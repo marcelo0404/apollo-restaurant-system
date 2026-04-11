@@ -32,7 +32,7 @@ Projeto desenvolvido como parte do processo seletivo da **EJECT**. O objetivo fo
 3. Abra o arquivo *index.html* em seu navegador ou utilize a extensão Live Server no VS Code.
 
 ## Estrutura de Pastas
-
+ ```bash
 /
 ├── index.html         # Página principal
 ├── sobre.html         # Página sobre o restaurante
