@@ -67,18 +67,22 @@ section {
     margin-right: 20.37rem;
 }
 
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .nav a {
     margin: 1rem;
     font-size: 1rem;
     color: #150101;
     font-weight: 600;
     line-height: 1.5rem;
-    /* Vou ter que criar um elemento de estilização para 
-    poder separar os elementos com a distancia certa */
-
-
-
 }
+
 
 .nav button {
     margin: 0 1rem;
@@ -86,11 +90,9 @@ section {
     color: #ffffff;
     font-weight: 600;
     min-width: 12.5rem;
-    /* Não faz sentido o tamanho do botão */
     min-height: 3.1rem;
     background-color: #E17100;
     border-radius: 0.625rem;
-    /* margin-right: 9.25rem; */
 }
 
 .nav a:hover {
@@ -115,10 +117,6 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
-
-
 }
 
 .home section {
@@ -162,10 +160,6 @@ h1 .destaque {
     font-size: 1.5rem;
     color: #f0f0f0;
     background-color: #E17100;
-
-
-
-
 }
 
 
@@ -194,9 +188,6 @@ section .destaques {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-
-
 }
 
 .destaques .container .box {
@@ -207,7 +198,6 @@ section .destaques {
     border: var(--border);
     border-radius: 0.75rem;
     background-color: #ffffff;
-
 }
 
 .destaques .container .box img {
@@ -215,16 +205,13 @@ section .destaques {
     width: 6.25rem;
     border-radius: 50%;
     margin: 2.25rem 5.25rem 1.88rem 5.25rem;
-
 }
 
 .destaques .container .box h3 {
     font-weight: 600;
     font-style: normal;
     font-size: 1.5rem;
-    /*O tamanho nunca bate com o do figma */
     margin-bottom: 1.87rem;
-
 }
 
 .destaques .container .box p {
@@ -243,22 +230,16 @@ section .destaques {
 }
 
 .chamada {
-    /* padding: 0;
-    margin: 0; */
-    /*Quando coloca ele cola no lado esquerdo F12  */
     max-width: 90rem;
     height: 24.8125rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: linear-gradient(135deg, #763b00 0%, #805c39 46.4%, #4c3722 100%), #ffc489;
-    /* O degrade não ficou igual */
-
 }
 
 .chamada .text {
     text-align: center;
-
 }
 
 .chamada .text h1 {
@@ -296,12 +277,9 @@ section .destaques {
     display: flex;
     padding: 0.75rem 1.3125rem;
     justify-content: center;
-    /* Não fica no centro */
     align-items: center;
     color: #ffb900;
     background-color: rgba(0, 0, 0, 0.4);
-    /* min-width: 374px;
-    min-height: 44px; */
     border: 2px solid var(--white);
     margin-bottom: 0.87rem;
 
@@ -314,10 +292,7 @@ section .destaques {
     font-size: 0.875rem;
     letter-spacing: 0.04375rem;
     margin-left: -3.1rem;
-
-
 }
-
 
 
 .chamada .photo img {
@@ -373,7 +348,6 @@ footer {
     max-width: 90rem;
     height: 19.875rem;
     margin: 0 auto;
-    /* O footer continua em baixo branco */
     background-color: #262626;
     color: #f0f0f0;
 }
@@ -386,14 +360,10 @@ footer {
 }
 
 
-
 .info {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
-
 }
 
 .info h2 {
@@ -401,7 +371,6 @@ footer {
     font-size: 1.125rem;
     font-weight: 600;
     margin-top: 0.5rem;
-
 }
 
 .info p {
@@ -416,7 +385,6 @@ footer {
     object-fit: cover;
     object-position: center;
     margin-left: 2.5rem;
-
 }
 
 .info .contato .item {
@@ -443,36 +411,20 @@ footer {
 .info .contato .item img {
     height: 1.5rem;
     width: auto;
-
 }
 
 .info .social .logos img {
     height: 1.5rem;
-
 }
-
-/* #vector {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    z-index: 10;
-} */
-
 
 
 .marca {
     height: 4rem;
-    /* Gostaria de saber como usar as marcações laranjas para saber as medidas */
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1.5rem;
     border-top: var(--border);
-
 }
 
 .marca p {
@@ -517,10 +469,9 @@ footer {
     border-radius: 5px;
 }
 
-/* Estilo base do Modal */
+
 .modal {
     display: none;
-    /* Começa escondido */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -528,12 +479,11 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    /* Fundo escurecido elegante */
     justify-content: center;
     align-items: center;
 }
 
-/* Conteúdo do Modal */
+
 .content {
     background-color: #fff;
     padding: 30px;
@@ -544,7 +494,7 @@ footer {
     text-align: center;
 }
 
-/* Botão de Fechar (X) */
+
 .close {
     position: absolute;
     right: 20px;
@@ -554,7 +504,274 @@ footer {
     color: #333;
 }
 
+@media (max-width: 1280px) {
 
+    .header {
+        max-width: 100%;
+        height: 6.6875rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 99;
+        border-bottom: var(--border);
+        background-color: #ffffff;
+
+    }
+
+    .header section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .header img {
+        margin-right: 1.5rem;
+        width: 12rem;
+        height: 100%;
+
+    }
+
+    .nav {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav a {
+        font-size: 1rem;
+        color: #150101;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+
+
+    .nav button {
+        margin: 0 auto;
+        font-size: 1.625rem;
+        color: #ffffff;
+        font-weight: 600;
+        min-width: 12.5rem;
+        min-height: 3.1rem;
+        background-color: #E17100;
+        border-radius: 0.625rem;
+    }
+
+    .nav a:hover {
+        color: var(--main-color);
+        border-bottom: 0.1rem solid var(--main-color);
+        padding-bottom: 0.5rem;
+        font-size: 1.3rem;
+
+    }
+
+    .destaques .container {
+        flex-direction: column;
+    }
+
+    .destaques .container .box {
+        width: 30rem;
+        height: 18rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+        padding: 2rem;
+        text-align: left;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.35);
+
+    }
+
+    .destaques .container .box img {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .destaques .container .box h3 {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    .destaques .container .box p {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+    .chamada .photo img {
+        width: 14rem;
+        height: 8rem;
+        object-fit: cover;
+    }
+
+    .place .img img {
+        display: flex;
+        width: 20rem;
+        height: 14rem;
+        object-fit: cover;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        height: auto;
+        position: relative;
+    }
+
+    .header img {
+        margin: 0 auto 1.5rem auto;
+        width: 10rem;
+    }
+
+    .header section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav button {
+        margin: 0 auto 0 auto;
+    }
+
+    .notice img {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    .home {
+        margin-top: 0;
+    }
+
+    .destaques .container {
+        flex-direction: column;
+    }
+
+    .destaques .container .box {
+        width: 30rem;
+        height: 18rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+        padding: 2rem;
+        text-align: left;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.35);
+
+    }
+
+    .destaques .container .box img {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .destaques .container .box h3 {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    .destaques .container .box p {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+    .chamada {
+        height: auto;
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .chamada .photo img {
+        margin-top: 2rem 2rem 0 5rem;
+    }
+
+    .chamada button {
+        margin: 0 auto;
+    }
+
+    #star {
+        margin: 0 auto 2.5rem auto;
+    }
+
+    .photo {
+        margin-left: 13rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .place .img img {
+        display: flex;
+        width: 14rem;
+        height: 10rem;
+        object-fit: cover;
+        align-items: center;
+    }
+
+    footer {
+        height: auto;
+        padding: 0.1rem 0 2rem 0;
+
+    }
+
+    .flogo img {
+        margin: 2rem auto;
+        display: block;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .info .social {
+        margin: 0;
+        align-items: center;
+    }
+
+    #mapa {
+        margin: 0 auto;
+    }
+
+    .marca {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem 0;
+        align-items: center;
+    }
+}
 
 @media (max-width: 768px) {
     html {
@@ -606,47 +823,75 @@ footer {
         margin-top: 0;
     }
 
+    .destaques .container {
+        flex-direction: column;
+    }
+
     .destaques .container .box {
         width: 30rem;
         height: 18rem;
-        display: grid;        
-        grid-template-columns: auto 1fr;        
+        display: grid;
+        grid-template-columns: auto 1fr;
         align-items: center;
-        column-gap: 1.5rem;        
-        row-gap: 1rem;        
+        column-gap: 1.5rem;
+        row-gap: 1rem;
         padding: 2rem;
         text-align: left;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.35);
-        
+
     }
 
     .destaques .container .box img {
-        grid-column: 1;        
-        grid-row: 1;        
-        margin: 0;        
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
         width: 6rem;
         height: 6rem;
     }
 
     .destaques .container .box h3 {
         grid-column: 2;
-        grid-row: 1;        
+        grid-row: 1;
         margin: 0;
         font-size: 1.8rem;
     }
 
     .destaques .container .box p {
         grid-column: 1 / span 2;
-        grid-row: 2;        
+        grid-row: 2;
         width: 100%;
         margin: 1rem 0 0 0;
     }
 
+    .chamada {
+        height: auto;
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .chamada .photo img {
+        margin-top: 2rem 2rem 0 5rem;
+    }
+
+    .photo {
+        margin-left: 13rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .place .img img {
+        display: flex;
+        width: 14rem;
+        height: 10rem;
+        object-fit: cover;
+        align-items: center;
+    }
 
     footer {
         height: auto;
         padding: 0.1rem 0 2rem 0;
-        
+
     }
 
     .flogo img {
@@ -676,39 +921,32 @@ footer {
         padding: 1.5rem 0;
         align-items: center;
     }
+}
 
-
-    .destaques .container {
-        flex-direction: column;
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
     }
 
-    .chamada {
+    .destaques .container .box {
+        width: 100%;
         height: auto;
-        flex-direction: column;
-        padding: 3rem 1rem;
+        display: block;
+        padding: 1rem;
     }
 
-    .chamada .photo img {
-        margin-top: 2rem 2rem 0 5rem;
-
+    .destaques .container .box img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 1rem 0;
     }
 
-    .photo {
-        margin-left: 13rem;
-        position: relative;
-        display: flex;
-        flex-direction: column;
+    .destaques .container .box h3 {
+        font-size: 1.5rem;
     }
 
-    .place .img img {
-        display: flex;
-        width: 14rem;
-        height: 10rem;
-        object-fit: cover;
-        align-items: center;
+    .destaques .container .box p {
+        width: 100%;
+        margin: 1rem 0 0 0;
     }
-
-
-
-
 }
