@@ -43,6 +43,7 @@ Projeto desenvolvido como parte do processo seletivo da **EJECT**. O objetivo fo
 │   ├── img/           # Imagens e ícones
 │   └── js/            # Lógica JavaScript
 └── README.md          # Documentação do projeto
+```
 
 ## Desenvolvedor
 Marcelo Vieira - marcelo0404
