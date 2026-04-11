@@ -5,7 +5,7 @@
     --bg: #f0f0f0;
     --black: #0000;
     --border: 0.25rem solid rgba(140, 136, 136, 0.24);
-    
+
 }
 
 * {
@@ -67,20 +67,20 @@ section {
     margin-right: 20.37rem;
 }
 
-.nav a{
+.nav a {
     margin: 1rem;
     font-size: 1rem;
-    color: #150101;  
-    font-weight: 600; 
+    color: #150101;
+    font-weight: 600;
     line-height: 1.5rem;
     /* Vou ter que criar um elemento de estilização para 
     poder separar os elementos com a distancia certa */
-    
+
 
 
 }
 
-.nav button{
+.nav button {
     margin: 0 1rem;
     font-size: 1.625rem;
     color: #ffffff;
@@ -103,22 +103,22 @@ section {
 
 .home {
     height: 34.8125rem;
-    max-width: 90rem; 
+    max-width: 90rem;
     margin: 6.68rem auto 0 auto;
     margin-top: 6.68rem;
     display: flex;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url("../img/back.jpg");
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/back.jpg");
+
     background-size: cover;
     background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    
-      
-    
+
+
+
+
 }
 
 .home section {
@@ -129,14 +129,14 @@ section {
 
 .conteudo {
     max-width: 60rem;
-    
+
 }
 
 .conteudo h1 {
     color: #f0f0f0;
     font-size: 3.75rem;
     margin-bottom: 5rem;
-    
+
 }
 
 h1 .destaque {
@@ -148,8 +148,8 @@ h1 .destaque {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 7.5rem;
-    
-   
+
+
 }
 
 .btn {
@@ -163,9 +163,9 @@ h1 .destaque {
     color: #f0f0f0;
     background-color: #E17100;
 
-    
-    
-    
+
+
+
 }
 
 
@@ -177,15 +177,15 @@ section .destaques {
 .destaques {
     background-color: #f0f0f0;
     max-width: 90rem;
-    
+
 }
 
-.destaques h1{
+.destaques h1 {
     color: #262626;
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 3.75rem; 
+    margin-bottom: 3.75rem;
 }
 
 .destaques .container {
@@ -194,9 +194,9 @@ section .destaques {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
 
-    
+
+
 }
 
 .destaques .container .box {
@@ -207,7 +207,7 @@ section .destaques {
     border: var(--border);
     border-radius: 0.75rem;
     background-color: #ffffff;
-    
+
 }
 
 .destaques .container .box img {
@@ -215,18 +215,19 @@ section .destaques {
     width: 6.25rem;
     border-radius: 50%;
     margin: 2.25rem 5.25rem 1.88rem 5.25rem;
-    
+
 }
 
 .destaques .container .box h3 {
     font-weight: 600;
     font-style: normal;
-    font-size: 1.5rem; /*O tamanho nunca bate com o do figma */
+    font-size: 1.5rem;
+    /*O tamanho nunca bate com o do figma */
     margin-bottom: 1.87rem;
-    
+
 }
 
-.destaques .container .box p{
+.destaques .container .box p {
     width: 15.1875rem;
     height: 6rem;
     font-weight: 400;
@@ -237,7 +238,8 @@ section .destaques {
 }
 
 .destaques .container .box:hover {
-    border: 0.1rem solid var(--main-color); ;
+    border: 0.1rem solid var(--main-color);
+    ;
 }
 
 .chamada {
@@ -245,7 +247,7 @@ section .destaques {
     margin: 0; */
     /*Quando coloca ele cola no lado esquerdo F12  */
     max-width: 90rem;
-    height: 24.8125rem; 
+    height: 24.8125rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -256,7 +258,7 @@ section .destaques {
 
 .chamada .text {
     text-align: center;
-    
+
 }
 
 .chamada .text h1 {
@@ -312,12 +314,12 @@ section .destaques {
     font-size: 0.875rem;
     letter-spacing: 0.04375rem;
     margin-left: -3.1rem;
-    
+
 
 }
 
 
-  
+
 .chamada .photo img {
     width: 18.75rem;
     height: 9.875rem;
@@ -353,15 +355,15 @@ section .destaques {
 }
 
 .place .img {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-.place .img img{
-    display: flex;    
+.place .img img {
+    display: flex;
     width: 25rem;
-    height: 20rem;    
+    height: 20rem;
     object-fit: cover;
     align-items: center;
 }
@@ -370,13 +372,13 @@ footer {
     justify-content: center;
     max-width: 90rem;
     height: 19.875rem;
-    margin: 0 auto; 
+    margin: 0 auto;
     /* O footer continua em baixo branco */
     background-color: #262626;
     color: #f0f0f0;
 }
 
-.flogo img{
+.flogo img {
     margin-left: 8.47rem;
     width: 14.189rem;
     height: 100%;
@@ -389,9 +391,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-    
-    
+
+
+
 }
 
 .info h2 {
@@ -420,22 +422,22 @@ footer {
 .info .contato .item {
     display: flex;
     flex-direction: row;
-    margin: 0.625rem;  
-    gap: 1.3rem;  
+    margin: 0.625rem;
+    gap: 1.3rem;
 }
 
 .info .hora {
     display: flex;
     flex-direction: column;
-    margin: 0.625rem;  
-    gap: 0.5rem;  
+    margin: 0.625rem;
+    gap: 0.5rem;
 }
 
 .info .social {
     display: flex;
     flex-direction: column;
-    margin: 0.625rem 0.625rem 0.625rem 2rem;  
-    gap: 0.5rem;  
+    margin: 0.625rem 0.625rem 0.625rem 2rem;
+    gap: 0.5rem;
 }
 
 .info .contato .item img {
@@ -446,7 +448,7 @@ footer {
 
 .info .social .logos img {
     height: 1.5rem;
-    
+
 }
 
 /* #vector {
@@ -473,7 +475,7 @@ footer {
 
 }
 
-.marca p{
+.marca p {
     color: #8e8e8e;
     font-size: 1.125rem;
     font-weight: 300;
@@ -490,24 +492,25 @@ footer {
     background: white;
     padding: 20px;
     width: 90%;
-    max-width: 450px; 
+    max-width: 450px;
     margin: 50px auto;
     border-radius: 10px;
     text-align: center;
 }
 
 .content img {
-    max-width: 100px; 
+    max-width: 100px;
     margin-bottom: 10px;
 }
 
 #formReserva {
     display: flex;
-    flex-direction: column; 
-    text-align: left; 
+    flex-direction: column;
+    text-align: left;
 }
 
-#formReserva input, #formReserva select {
+#formReserva input,
+#formReserva select {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -516,14 +519,16 @@ footer {
 
 /* Estilo base do Modal */
 .modal {
-    display: none; /* Começa escondido */
+    display: none;
+    /* Começa escondido */
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo escurecido elegante */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fundo escurecido elegante */
     justify-content: center;
     align-items: center;
 }
@@ -551,5 +556,159 @@ footer {
 
 
 
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
 
 
+    .header {
+        height: auto;
+        position: relative;
+    }
+
+    .header section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .header img {
+        margin: 0 auto 1.5rem auto;
+        width: 10rem;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .borda {
+        padding: 1.5rem 1rem;
+    }
+
+    .notice img {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    .home {
+        margin-top: 0;
+    }
+
+    .destaques .container .box {
+        width: 30rem;
+        height: 18rem;
+        display: grid;        
+        grid-template-columns: auto 1fr;        
+        align-items: center;
+        column-gap: 1.5rem;        
+        row-gap: 1rem;        
+        padding: 2rem;
+        text-align: left;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.35);
+        
+    }
+
+    .destaques .container .box img {
+        grid-column: 1;        
+        grid-row: 1;        
+        margin: 0;        
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .destaques .container .box h3 {
+        grid-column: 2;
+        grid-row: 1;        
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    .destaques .container .box p {
+        grid-column: 1 / span 2;
+        grid-row: 2;        
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+
+    footer {
+        height: auto;
+        padding: 0.1rem 0 2rem 0;
+        
+    }
+
+    .flogo img {
+        margin: 2rem auto;
+        display: block;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .info .social {
+        margin: 0;
+        align-items: center;
+    }
+
+    #mapa {
+        margin: 0 auto;
+    }
+
+    .marca {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem 0;
+        align-items: center;
+    }
+
+
+    .destaques .container {
+        flex-direction: column;
+    }
+
+    .chamada {
+        height: auto;
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .chamada .photo img {
+        margin-top: 2rem 2rem 0 5rem;
+
+    }
+
+    .photo {
+        margin-left: 13rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .place .img img {
+        display: flex;
+        width: 14rem;
+        height: 10rem;
+        object-fit: cover;
+        align-items: center;
+    }
+
+
+
+
+}

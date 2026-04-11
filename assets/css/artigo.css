@@ -31,7 +31,8 @@ html {
     flex-shrink: 0;
     aspect-ratio: 1/1;
     border-radius: 0.625rem;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin:  1.2rem 0 3rem 0;
+    
 }
 
 #massa {
@@ -51,6 +52,21 @@ html {
     max-width: 90rem;
     height: 168.625rem;
     background: #f0f0f0;
+}
+
+.info_chef {
+    display: flex;
+    align-items:start;
+    gap: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-top: 1rem;
+    
+
 }
 
 .notice {
@@ -74,7 +90,7 @@ html {
 
 }
 
-.borda .notice .margem h1 {
+.margem h1 {
     color: #E17100;
     margin-top: 10rem;
     font-family: Inter;
@@ -83,6 +99,21 @@ html {
     font-weight: 700;
     line-height: normal;
     border-bottom: 0.125rem  solid #5c5145 ;
+} 
+
+.margem p{
+    color: #404040;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0.5rem;
+}
+
+
+p .destaque {
+    color: var(--main-color);
 }
 
 .borda .notice h2 {
