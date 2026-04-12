@@ -134,6 +134,118 @@ p .destaque {
     line-height: normal;
 }
 
+footer {
+    justify-content: center;
+    max-width: 90rem;
+    height: 19.875rem;
+    margin: 0 auto;
+    background-color: #262626;
+    color: #f0f0f0;
+}
+
+.flogo img {
+    margin-left: 8.47rem;
+    width: 14.189rem;
+    height: 100%;
+    margin-top: 1.5rem;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info h2 {
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.info p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+#mapa {
+    width: 12.46669rem;
+    height: 8.5rem;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 2.5rem;
+}
+
+.info .contato .item {
+    display: flex;
+    flex-direction: row;
+    margin: 0.625rem;
+    gap: 1.3rem;
+}
+
+.info .hora {
+    display: flex;
+    flex-direction: column;
+    margin: 0.625rem;
+    gap: 0.5rem;
+}
+
+.info .social {
+    display: flex;
+    flex-direction: column;
+    margin: 0.625rem 0.625rem 0.625rem 2rem;
+    gap: 0.5rem;
+}
+
+.info .contato .item img {
+    height: 1.5rem;
+    width: auto;
+}
+
+.info .social .logos img {
+    height: 1.5rem;
+}
+
+
+.marca {
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    border-top: var(--border);
+}
+
+.marca p {
+    color: #8e8e8e;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-top: 1.75rem;
+}
+
+.marca img {
+    margin-top: 1.75rem;
+    height: 1.76956rem;
+    width: auto;
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 450px;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
     #massa {
         width: 100%;
